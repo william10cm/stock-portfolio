@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use("/api/stocks", stockRoutes);
 
-app.get("/", (req, res) => {
+app.get("/api/health", (req, res) => {
   res.json({ message: "Stock Portfolio API is running" });
 });
 
